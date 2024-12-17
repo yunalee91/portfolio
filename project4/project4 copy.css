@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.intro {
+  background-color: var(--bg-olivegreen);
+  color: var(--color-white);
+}
+.intro .intro-line-box {
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 60px;
+  border-top: 1.5px solid var(--color-white);
+  border-bottom: 1.5px solid var(--color-white);
+}
+
+.intro .intro-line-box img:nth-of-type(2) { display: none;}
+.intro .intro-line-box img:nth-of-type(4) { display: none;}
+.intro .intro-line-box p { display: none;}
+
+
+
+/* 반응형 pc ver */
+@media screen and (min-width: 1024px) {
+  .intro .intro-line-box img:nth-of-type(2) { display: block;}
+.intro .intro-line-box img:nth-of-type(4) { display: block;}
+.intro .intro-line-box p { display: block; color: transparent;}
+}

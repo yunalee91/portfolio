@@ -7,8 +7,7 @@ document.addEventListener('scroll', function() {
     mainTitle.style.transform = 'scale(0.09)';
     mainTitle.style.lineHeight = '0px';
     mainTitle.style.position = 'fixed';
-    mainTitle.style.top = '-12px';
-    mainTitle.style.width = '1440px';
+    mainTitle.style.top = '-137px';
     mainTitle.style.zIndex = '1000';
   } else {
     mainTitle.style.transform = 'scale(1)';
@@ -16,3 +15,5 @@ document.addEventListener('scroll', function() {
     mainTitle.style.position = 'static';
   }
 });
+
+
