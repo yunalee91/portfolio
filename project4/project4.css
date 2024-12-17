@@ -1,0 +1,541 @@
+@charset "utf-8";
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: var(--color-white);
+}
+
+
+/* 01.intro */
+.intro {
+  max-width: 1440px;
+  background-color: var(--bg-olivegreen);
+}
+
+.intro .intro-line-box {
+  height: 40px;
+  border-top: 1.5px solid var(--color-white);
+  border-bottom: 1.5px solid var(--color-white);
+  justify-content: space-around;
+}
+
+.intro-main-title {
+  text-align: center;
+  line-height: 250px;
+}
+
+/* 인트로 이미지 컨테이너 */
+.intro .intro-img-container {
+  padding: 28px 0;
+  border-top: 1.5px solid var(--color-white);
+  border-bottom: 1.5px solid var(--color-white);
+}
+
+
+.intro .intro-img-container .intro-img {
+  /* width: 1385px; */
+  width: 96%;
+  height: 853px;
+  background: url(./images/main_intro.png) 50% /cover no-repeat;
+  margin: 0 auto;
+}
+
+.intro .intro-img-container .intro-txt h2 {
+  text-align: center;
+  padding-top: 126px;
+}
+
+.intro .intro-img-container .intro-txt p {
+  line-height: 27px;
+  padding-left: 200px;
+}
+
+
+
+
+/* 반응형 pc ver */
+@media screen and (max-width: 540px) {
+ .intro .intro-main-title {
+      font-size: 73px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 02. intro main-promotion */
+.main-promotion {
+  background-color: var(--bg-olivegreen);
+}
+
+.main-promotion .main-promotion-container {
+  background-color: var(--bg-olivegreen);
+  grid-template-columns: 720px 720px;
+  grid-template-rows: 890px 800px;
+
+}
+
+
+
+
+
+.main-promotion .promo-one {
+  width: calc(1440px / 2);
+  border-bottom: 1.5px solid var(--color-white);
+  border-right: 1.5px solid var(--color-white);
+}
+
+.main-promotion .promo-one .promo-one-img {
+  margin: 20px auto;
+  width: 670px;
+  height: 845px;
+  background: url(./images/intro02.jpg) 50% /cover no-repeat;
+}
+
+
+
+
+
+.main-promotion .promo-one-disc {
+  width: calc(1440px / 2);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1.5px solid var(--color-white);
+}
+
+.main-promotion .promo-one-disc h3 {
+  margin-bottom: 80px;
+}
+
+.main-promotion .promo-one-disc p:first-of-type {
+  margin-bottom: 140px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+
+
+
+
+
+
+
+.main-promotion .promo-two-disc {
+  width: calc(1440px / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1.5px solid var(--color-white);
+  border-right: 1.5px solid var(--color-white);
+}
+
+.main-promotion .promo-two-disc .promo-two-txt:first-of-type {
+  padding-bottom: 110px;
+}
+
+
+
+
+
+
+
+
+.main-promotion .promo-two {
+  width: calc(1440px / 2);
+  border-bottom: 1.5px solid var(--color-white);
+}
+
+.main-promotion .promo-two .promo-two-img {
+  margin: 83px auto;
+  width: 440px;
+  height: 635px;
+  background: url(./images/intro03.jpg) 50% /cover no-repeat;
+}
+
+
+/* 흐르는 텍스트 */
+
+
+
+.main-promotion-text {
+  height: 195px;
+  font-size: 150px;
+  margin-left: 35px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec3. products */
+.products {
+  background-color: var(--bg-beige);
+  color: var(--bg-olivegreen);
+}
+
+.products .protucts-one,
+.products .protucts-two,
+.products .protucts-three {
+  height: calc(100vh - 195px);
+  grid-template-columns: 720px 720px;
+  border-bottom: 1.5px var(--bg-olivegreen) solid;
+}
+
+.products .protucts-one .product-img,
+.products .protucts-two .product-img,
+.products .protucts-three .product-img {
+  width: calc(1440px / 2);
+  border-right: 1.5px var(--bg-olivegreen) solid;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height: 100%; /* 부모 높이를 기준으로 중앙 정렬 */
+}
+
+.products .protucts-one .product-img img {
+  width: 230px;
+}
+
+.products .protucts-two .product-img img {
+  width: 275px;
+}
+
+.products .protucts-three .product-img img {
+  width: 215px;
+}
+
+.products .protucts-desc {
+  width: calc(1440px / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.products .protucts-desc h3 {
+  margin-bottom: 55px;
+}
+
+.products .protucts-desc p {
+  font-size: 17px;
+}
+
+.products .protucts-desc p:first-of-type {
+  margin-bottom: 15px;
+}
+
+.products .protucts-desc p:last-of-type {
+  margin-bottom: 115px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec.4 visual */
+.visual .visual-contents {
+  align-items: center; 
+  height: 800px;
+  background-color: var(--bg-olivegreen);
+}
+
+/* visual-one (텍스트 부분) */
+.visual .visual-contents .visual-text {  
+  width: calc(50% - 1px); 
+  padding-left: 80px;
+  text-align: left; 
+}
+
+.visual .visual-contents .visual-text p:first-of-type {
+  font-size: 22px;
+}
+
+.visual .visual-contents .visual-text h3 {
+  font-size: 44px;
+  margin-bottom: 110px;
+  position: relative;
+}
+.visual .visual-contents .visual-text h3::before {
+content: "";
+width: 555px;
+height: 1.5px;
+background-color: rgb(255, 255, 255, 0.5);
+position: absolute;
+bottom: -25px;
+
+}
+
+
+.visual-text p {
+  margin: 1rem 0;
+  font-size: 21px;
+}
+
+.visual-text p:first-of-type {
+  font-size: 22px;
+}
+
+
+.visual .visual-contents .visual-text span:nth-of-type(1) {
+  font-family: 'Instrument Serif';
+  font-size: 28px;
+  padding-right: 10px;
+}
+
+.visual .visual-contents .visual-text span:nth-of-type(2) {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* visual-two (사진 부분) */
+.visual-one {
+  width: 50%; /* 화면의 50% 차지 */
+  height: 100%; /* 부모 높이에 맞추기 */
+  border-left: 2px var(--color-white) solid;
+}
+
+.visual-one img {
+  width: 100%; /* 가로를 꽉 채움 */
+  height: 100%; /* 세로를 꽉 채움 */
+  object-fit: cover; /* 사진 비율 유지하며 영역 채우기 */
+}
+
+/* visual-wrapper */
+.visual-wrapper {
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2px;
+  border-top: 2px solid var(--color-white);
+  border-bottom: 2px solid var(--color-white);
+}
+
+.visual-wrapper .visual-box {
+  width: 100%; 
+  height: 665px; 
+}
+
+.visual-wrapper img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec.5 gift */
+.gift {
+  background-color: var(--bg-dgray);
+  height: 550px;
+  padding: 0 170px;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--color-white);
+
+}
+
+.gift .gift-text {
+  text-align: center;
+  padding-left: 100px;
+}
+
+.gift .gift-text .gift-title {
+  font-size: 60px;
+  line-height: 60px;
+}
+.gift .gift-text .gift-title span {
+  font-style: italic;
+}
+
+.gift .gift-text p:nth-of-type(3) {
+  padding: 50px 0 40px 0;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec.6 brand */
+.brand {
+  height: 660px; 
+  border-bottom: 2px solid var(--color-white);
+
+}
+
+.brand > div {
+  width: 50%; 
+  height: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  padding-bottom: 80px;
+}
+
+/* aromatica 영역 */
+.aromatica {
+  background-image: url(./images/brand01.png);
+}
+
+/* siolbaker 영역 */
+.siolbaker {
+  background: url(./images/brand02.png) 50% /cover no-repeat;
+  border-left: 2px var(--color-white) solid;
+
+
+}
+
+/* 로고 이미지 스타일 */
+.brand .aromatica img {
+  max-width: 250px;
+  margin-bottom: 100px;
+}
+.brand .siolbaker img {
+  max-width: 180px;
+  margin-bottom: 90px;
+}
+
+/* 텍스트 스타일 */
+.brand p {
+  font-size: 18px; 
+  line-height: 30px; 
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec.7 footer */
+footer {
+  background-color: var(--bg-olivegreen);
+  height: 550px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+
+footer .footer-title {
+  font-size: 58px;
+  padding-bottom: 50px;
+}
+
+footer p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+footer .btn_wh {
+  margin-top: 40px;
+}
+
+
+

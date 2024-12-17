@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="32.000000pt" height="32.000000pt"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="32.000000pt" height="32.000000pt" viewBox="0 0 32.000000 32.000000" preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+<path d="M95 201 c-13 -28 -31 -54 -38 -58 -8 -4 -20 -19 -27 -33 -12 -23 -11
+-22 16 5 17 17 41 48 54 70 13 22 25 42 26 43 1 2 12 -6 24 -18 15 -15 27 -19
+38 -14 9 4 32 8 50 8 l34 -1 -27 14 c-24 13 -29 13 -45 -2 -18 -16 -20 -16
+-43 9 -13 14 -27 26 -30 26 -4 0 -18 -22 -32 -49z"></path>
+</g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>

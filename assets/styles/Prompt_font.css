@@ -1,0 +1,25 @@
+/* Include all fonts & customized classes */
+
+
+@font-face {
+  font-family: "Prompt";
+  src: url(../fonts/Prompt/Prompt-Medium.woff2) format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Prompt";
+  src: url(../fonts/Prompt/Prompt-MediumItalic.woff2) format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+  
+.prompt-500 {
+  font-family: "Prompt";
+  font-weight: 500;
+  font-style: normal; }
+
+.prompt-500i {
+  font-family: "Prompt";
+  font-weight: 500;
+  font-style: italic; }
+

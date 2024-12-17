@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/*
+@font-face {   
+	font-family: 'Pretendard Variable'; 
+*/
+@import url(../../../assets/styles/pretendardvariable.css);
+
+
+/**** font-family-setting ****/
+html {
+    font-family: 'Pretendard Variable';
+    color: #000;
+    font-weight: 600;
+}
+
+
+
+
+
+/* 레이아웃 */
+.flex-container {
+    display: flex;
+    align-items: center;
+  }
+  .grid-container {
+    display: grid;
+  }
+  .transit {
+    transition: 0.3s;
+  }
+
+
+
+
+
+
+/* 이미지 사이즈 셋팅 */
+.products-one .products-wrapper .products-image img {
+    width: 500px;
+}
+
+.products-wrapper-bottom .products-img-circle {
+    width: 410px;
+}
+
+.contents-first-box img {
+    width: 400px;
+}
+
+.second-container .second-img-wrapper img:last-of-type {
+    width: 350px;
+}
+
+
+.contents-hiddenlucky .contents-second-box img:first-of-type {
+    width: 940px;
+}
+
+.contents-hiddenlucky .contents-second-box img:last-of-type {
+    width: 410px;
+}
+
+
+/* 라벤더 */
+.lavender-box .contents-slidShow img:nth-of-type(1) { width: 400px; }
+.lavender-box .contents-slidShow img:nth-of-type(2) { width: 350px; }
+.lavender-box .contents-slidShow img:nth-of-type(3) { width: 400px; }
+.lavender-box .contents-slidShow img:nth-of-type(4) { width: 350px; }
+.lavender-box .contents-slidShow img:nth-of-type(5) { width: 400px; }
+
+
+/* 이벤트 */
+.event .list-img img {
+    width: 335px;
+}
+
+
+
+
+/* css 변수 */
+:root {
+    --bg-black: #181818;
+    --bg-cblue: #0B62CD;
+    --bg-blue: #0390E2;
+    --bg-lblue: #3D94FF;
+    --bg-inblue: #599CE0;
+    --bg-dgreen: #218352;
+    --bg-green: #06AC63;
+    --bg-yellow: #FFEB40;
+    --bg-red: #E62D2A;
+    --bg-lavender: #CEC4FD;
+
+
+    --color-white: #fff;
+    --color-black: #181818;
+}
+
+
+/* 버튼 */
+.btn {
+    font-size: 20px;
+    background-color: var(--bg-black);
+    color: var(--color-white);
+    padding: 15px 35px;
+    border-radius: 30px;
+}
+
+
+.btn:hover {
+    font-size: 20px;
+    background-color: var(--bg-yellow);
+    color: var(--color-black);
+    padding: 15px 35px;
+    border-radius: 30px;
+}
