@@ -4,7 +4,7 @@
 #navbar {
   width: 100%;
   height: 70px;
-  padding: 0 20px;
+  padding: 0 40px;
 
   position: fixed;
   top: 0;
@@ -15,8 +15,6 @@
 
   background-color: transparent;
   backdrop-filter: blur(5px);
-  /* transparent; 기본으론 투명으로 설정했다가, 스크롤링하면 색상이 변하도록*/
-  /*스크롤링할 때 자연스럽게 색이 입혀지도록 애니메이션추가*/
 }
 
 
@@ -196,11 +194,12 @@
 /* 앱 모션 박스 (추후 추가 예정) */
 .app-motion-box {
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 .app-motion-box img {
   display: block;
-  height: 670.87px;
+  height: 640px;
   width: 310px;
   border-radius: .8rem;
 }
@@ -225,7 +224,7 @@
   border: var(--border-primary);
   border-left: none;
   width: 100%;
-  padding: 30px 50px;
+  padding: 30px 35px;
 }
 
 .personal-projects .personal-pj-wrapper .personal-pj-box:last-child {
@@ -237,23 +236,24 @@
   height: 320px;
   width: 100%;
   background-color: var(--bg-dgray);
-
-  margin-bottom: 10px;
 }
 
 .personal-projects .personal-pj-wrapper .personal-pj-box .personal-pj-one {
   background: url(./images/cayl-cover.svg) 50% /cover no-repeat;
   height: 320px;
+  margin-bottom: 20px;
 }
 
 .personal-projects .personal-pj-wrapper .personal-pj-box .personal-pj-two {
   background: url(./images/dropdrop.svg) 50% /cover no-repeat;
   height: 320px;
+  margin-bottom: 20px;
 }
 
 .personal-projects .personal-pj-wrapper .personal-pj-box .personal-pj-three {
   background: url(./images/aromaticaaaa.png) 50% /cover no-repeat;
   height: 320px;
+  margin-bottom: 20px;
 }
 
 .personal-projects .personal-pj-wrapper .personal-pj-box .btn-box {
@@ -271,17 +271,18 @@
   background-color: var(--bg-black);
 }
 
-.other-projects .other-project-wrapper {
-  display: block;
+.other-projects .other-title-wrapper {
+  height: 60vh;
+  display: inline-block;
   padding-top: 200px;
 }
 
-.other-projects .other-project-wrapper .list-title-md {
+.other-projects .other-title-wrapper .list-title-md {
   color: var(--color-gray);
 }
 
-.other-projects .other-project-wrapper .list-title-lg {
-  background: url(./images/arrow_outward_icon.svg) no-repeat 500px 50% / 60px;
+.other-projects .list-title-lg {
+  background: url(./images/arrow_outward_icon.svg) no-repeat 420px 50% / 55px;
 }
 
 .other-projects .other-project-txt {
@@ -292,20 +293,122 @@
 
 
 
+.other-container {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/* 코드펜 */
+.cards h1 {
+  color: var(--color-primary);
+  font-family: "Quantico";
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.cards {
+  margin: 0;
+  height: 60vh;
+  width: 1150px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C0FC75;
+  overflow: hidden;
+}
+
+.card {
+  background: #17141d;
+  min-width: 280px;
+  width: 280px;
+  min-height: 360px;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: -0.5rem 0 3rem rgb(0, 0, 0, 0.5);
+  transition: 0.3s;
+  --distance: -130px;
+  color: white;
+  font-weight: 400;
+}
+
+
+
+
+
+.card:not(:first-child) {
+  margin-left: var(--distance);
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translateY(-1rem);
+}
+
+.card:hover ~ .card,
+.card:focus-within ~ .card {
+  transform: translateX(calc(var(--distance) * -1));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**** [004. Skills] ****/
 .skill-section {
-  height: 285vh;
+  height: 300vh;
   background-color: var(--bg-black);
   padding-top: var(--spacing-3xlg);
   /*100px*/
 }
 
-.skill-section .skill-wrapper li {
-  padding: 100px 200px;
+.skill-section .skill-wrapper {
+  margin: 60px 40px 100px;
+}
+
+.skill-section .skill-wrapper .card-item {
+  padding: 120px 200px;
   grid-template-columns: repeat(2, 1fr);
   height: 45vh;
+
+  background-color: var(--bg-dgray);
+  color: var(--primary-color);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  gap: 100px 0;
+
+
+  position: sticky;
+  top: 100px;
 }
 
 .skill-section .skill-wrapper li:nth-of-type(odd) {
@@ -313,7 +416,19 @@
   color: var(--color-black);
 }
 
+.skill-section .skill-wrapper li:nth-of-type(odd) p {
+  font-weight: 500;
+}
 
+.skill-section .skill-wrapper .skill-two .skill-txt-wrapper p:nth-of-type(5) {
+  text-indent: 10px;
+}
+.skill-section .skill-wrapper .skill-two .skill-txt-wrapper p:nth-of-type(6) {
+  text-indent: 10px;
+}
+.skill-section .skill-wrapper .skill-two .skill-txt-wrapper span {
+  padding-left: 20px;
+}
 
 .skill-section .skill-wrapper .skill-six .licence-box {
   display: grid;
@@ -334,6 +449,40 @@
   place-items: center;
   border-radius: .5rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -381,10 +530,14 @@ footer .contacts-box ul li {
 footer .contacts-box ul li a {
   display: block;
   padding: 20px;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
 }
 
 footer .contacts-box ul li a:hover {
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary); */
+  box-shadow: inset 150px 0 0 0 var(--color-primary);
+
   color: var(--color-black);
   /* border-radius: .5rem; */
 }

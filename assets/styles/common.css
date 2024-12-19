@@ -26,6 +26,11 @@
    */
 @import url(../styles/Prompt_font.css);
 
+/***** fonts *****/
+/* @font-face {   
+    font-family: "Quantico"; */
+    @import url(../styles/Quantico_font.css);
+
 
 
 /**** font-family-setting ****/
@@ -44,11 +49,16 @@ header,
 }
 
 .list-title-lg,
-.list-title-md,
 .list-title,
 .footer-title-wrapper {
   font-family: 'Prompt';
 }
+
+
+.list-title-md {
+  font-family: "Quantico";
+}
+
 
 
 
@@ -197,12 +207,12 @@ header, .index, .btn {
 }
 
 .padding-lg {
-  padding: 0 var(--spacing-lg);
+  padding: 0 var(--spacing-xlg);
 }
-/* 전체 공통 여백 30px */
+/* 전체 공통 여백 40px */
 
 .padding-top-lg {
-  padding: var(--spacing-3xlg) var(--spacing-lg) 0;
+  padding: var(--spacing-3xlg) var(--spacing-xlg) 0;
   /* 탑 100px / 사이드 30px */
 }
 
@@ -245,6 +255,9 @@ header, .index, .btn {
   width: calc(100% - 60px);
   background: var(--color-primary);
 } */
+
+
+
 
 
 
