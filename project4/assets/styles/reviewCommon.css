@@ -48,8 +48,7 @@ header {
 
 
   --color-primary: #B1EA11;
-  --bg-yellow: #FFEB40;
-  --bg-orange: #FF7A2D;
+  --bg-olivegreen: #57725F;
 
 
 
@@ -62,6 +61,7 @@ header {
 
   --color-white: #fff;
   --color-gray: #484848;
+  --color-dgray: #525252;
   --color-black: #181818;
 
   --spacing-3xlg: 6.25rem;

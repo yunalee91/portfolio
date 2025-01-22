@@ -303,13 +303,18 @@
 .cards h1 {
   color: var(--color-primary);
   font-family: "Quantico";
-  font-size: 20px;
-  margin-bottom: 50px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  z-index: 999;
+}
+
+.cards p {
+font-size: 16px;
 }
 .cards {
   margin: 0;
   height: 60vh;
-  width: 1150px;
+  width: 1100px;
   border-radius: 10px;
 
   display: flex;
@@ -323,14 +328,27 @@
   background: #17141d;
   min-width: 280px;
   width: 280px;
-  min-height: 360px;
+  min-height: 400px;
   border-radius: 10px;
   padding: 1.5rem;
   box-shadow: -0.5rem 0 3rem rgb(0, 0, 0, 0.5);
   transition: 0.3s;
-  --distance: -130px;
+  --distance: -50px;
   color: white;
   font-weight: 400;
+
+}
+
+
+.card:nth-child(1) {
+  background: url(./project6/images/card1.png) 50% /cover no-repeat;
+
+}
+.card:nth-child(2) {
+  background: url(./project6/images/card2.png) 50% /cover no-repeat;
+}
+.card:nth-child(3) {
+  background: url(./project6/images/card3.png) 50% /cover no-repeat;
 }
 
 
