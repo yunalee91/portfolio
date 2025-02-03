@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+
+
+/***** fonts *****/
+/* font-family: 'Pretendard Variable'; */
+@import url(../../../assets/styles/pretendardvariable.css);
+
+/* font-family: 'Instrument Serif'; */
+@import url(../../../assets/styles/InstrumentSerif_font.css);
+
+/* font-family: 'Italiana'; */
+@import url(../../../assets/styles/Italiana_font.css);
+
+
+/**** font-family-setting ****/
+html {
+  font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h3, .gift-title, .footer-title, .line-wrapper { 
+  font-family: 'Instrument Serif';
+}
+
+h2 {
+  font-family: 'Italiana';
+}
+
+
+
+/**** css 변수 ****/
+:root {
+  --bg-olivegreen: #57725F;
+  --bg-beige: #DFDAD5;
+  --bg-dgray: #525252;
+  --bg-black: #181818; 
+
+
+  --color-white: #fff;
+  --color-black: #181818;
+}
+
+
+/**** global style ****/
+/* 부드러운 스크롤 */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/**** font-size-setting ****/
+h1 { 
+  font-size: clamp(73px, 18vw, 270px);
+  line-height: clamp(120px, 18vw, 250px);
+}
+
+h2 {
+  font-size: clamp(34px, 8vw, 105px);
+
+}
+.promo-title {
+  font-size: clamp(28px, 4vw, 44px);
+}
+h3 {
+  font-size: clamp(26px, 4vw, 40px);
+}
+
+
+
+/* 레이아웃 */
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+.grid-container {
+  display: grid;
+}
+.transit {
+  transition: 0.3s;
+}
+
+
+
+/* 기타 btn */
+.btn {
+  font-size: clamp(14px, 1.8vw, 18px);
+  line-height: 30px;
+  display: inline-block;
+  background-color: rgb(255, 255, 255, 0.4);
+  color: var(--color-white);
+
+  border-radius: 10px;
+  padding: 13px 35px;
+  cursor: pointer; 
+}
+.btn:hover {
+  background-color: var(--color-white);
+  color: var(--bg-olivegreen);
+}
+
+
+
+.btn_green {
+  font-size: clamp(14px, 1.8vw, 18px);
+  line-height: 30px;
+  display: inline-block;
+  background-color: var(--bg-olivegreen);
+  color: var(--color-white);
+
+  border-radius: 10px;
+  padding: 13px 35px;
+  cursor: pointer; 
+}
+.btn_green:hover {
+  background-color: var(--color-white);
+  color: var(--bg-olivegreen);
+}
+
+
+
+.btn_wh {
+  font-size: clamp(15px, 1.8vw, 18px);
+  line-height: 30px;
+  display: inline-block;
+  background-color: var(--color-white);
+  color: var(--bg-olivegreen);
+
+  border-radius: 10px;
+  padding: 13px 35px;
+  cursor: pointer;
+  font-weight: 500;
+  border: 2px solid transparent; /
+
+}
+.btn_wh:hover {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  box-sizing: content-box;
+}

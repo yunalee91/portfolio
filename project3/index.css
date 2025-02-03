@@ -1,0 +1,715 @@
+@charset "utf-8";
+
+/***** fonts *****/
+/* @font-face {   
+    font-family: "Quantico"; */
+@import url(../assets/styles/Quantico_font.css);
+
+
+
+/* main-side-bar 고정바 영역 */
+.main-side-bar {
+  width: 18%;
+  min-width: 344px;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  background-color: #000;
+  padding: 0 40px;
+  box-sizing: border-box;
+  z-index: 999999;
+}
+
+/* main-contents 콘텐츠 영역 */
+.main-contents {
+  width: 82%;
+  min-width: 1300px;
+  margin-left: 18%;
+}
+
+
+
+
+
+/* main-side-bar 사이드 고정바 */
+.main-side-bar .side-bar-wrapper {
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.main-side-bar .pj-label {
+  font-family: 'IBM Plex Mono';
+  color: var(--bg-yellow);
+}
+
+.main-side-bar .txt-wrapper {
+  padding-top: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: var(--color-white);
+}
+
+.main-side-bar .txt-wrapper img {
+  filter: invert(100%);
+  width: 250px;
+}
+
+.main-side-bar p:nth-child(2) {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--bg-yellow);
+}
+
+.main-side-bar p:nth-child(3) {
+  margin-top: 20px;
+}
+
+.main-side-bar .main-link-btn {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  background-color: var(--bg-yellow);
+  color: var(--color-black);
+  border: var(--bg-yellow);
+  border-radius: .5rem;
+  padding: 20px 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.main-side-bar .main-link-btn:hover {
+  background-color: transparent;
+  border: var(--bg-yellow) 1px solid;
+  color: var(--bg-yellow);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* sec1 - intro 메인 인트로 */
+.main-contents .main-intro {
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  height: 100vh;
+  padding-top: 70px;
+}
+
+.main-contents .intro-box-left {
+  background-color: var(--bg-yellow);
+  height: calc(100vh - 70px);
+  margin-top: 70px;
+  width: 55%;
+}
+
+/* 아이패드 목업 스타일 */
+.ipad-mockup {
+  width: 561px;
+  height: 730px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(./images/review/ipadMockup.png);
+  background-size: cover;
+  background-position: center;
+  margin-left: 150px;
+  margin-top: 52px;
+}
+
+
+/* 아이패드 안의 화면 */
+.screen {
+  width: 509px;
+  height: 679px;
+  position: absolute;
+  top: 3.5%;
+  left: 4.6%;
+  overflow: hidden;
+  border-radius: 13px;
+  background-color: #fff;
+}
+
+/* 화면 안의 이미지 */
+.images {
+  position: absolute;
+  top: 0;
+  animation: slide 13s ease-in-out infinite alternate;
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+}
+
+/* translateY 애니메이션 */
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-81%);
+  }
+}
+
+.main-contents .intro-box-right {
+  background-color: var(--color-black);
+  height: calc(100vh - 70px);
+  margin-top: 70px;
+  width: 45%;
+}
+
+.main-contents .intro-box-right .intro-txt-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--bg-yellow);
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 100px;
+}
+
+.main-contents .intro-box-right .intro-txt-wrapper .intro-first-title {
+  font-size: 85px;
+}
+
+.main-contents .intro-box-right .intro-txt-wrapper span {
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec2- about,brand 브랜드 소개 */
+.brand {
+  padding: 150px 150px 200px 150px;
+}
+
+
+.brand .brand-container {
+  justify-content: space-around;
+
+}
+
+.brand .brand-container .txt-wrapper p {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.brand .brand-container .txt-wrapper p:first-of-type {
+  margin-bottom: 25px;
+}
+
+.brand .brand-container .brand-img img {
+  width: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec3 - Overview 오버뷰 */
+.overview {
+  padding: 150px 150px 200px 150px;
+}
+
+.overview::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  height: 1.5px;
+  background-color: #777;
+}
+
+.overview .overview-container {
+  flex-direction: column;
+}
+
+
+.overview .overview-txt-box p {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.overview .overview-txt-box p:first-child {
+  padding-bottom: 30px;
+}
+
+
+/* 오버뷰 circle */
+.circle-wrapper {
+  margin-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+  width: 68%;
+}
+
+.circle-wrapper .circlebox {
+  border: var(--bg-orange) 2px solid;
+  height: 230px;
+  width: 230px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+.circle-wrapper .circlebox p {
+  font-size: 16.5px;
+}
+
+.circle-wrapper .line-box {
+  position: relative;
+  width: 430px;
+  color: var(--bg-orange);
+}
+
+.circle-wrapper .line-box .box2 {
+  position: absolute;
+  right: 0;
+}
+
+.circle-wrapper .full-box {
+  background-color: var(--bg-orange);
+  border-radius: 50%;
+  color: var(--color-white);
+}
+
+
+/* 화살표 */
+.arrow-box {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.arrow-box svg {
+  height: 140px;
+  padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec4 - Design Strategy 디자인 전략 */
+.strategy {
+  padding: 150px 150px 200px 150px;
+}
+
+.strategy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  height: 1.5px;
+  background-color: #777;
+}
+
+.strategy .stratrgy-container {
+  flex-direction: column;
+  color: var(--bg-orange);
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+
+.strategy .stratrgy-container .slogan {
+  font-size: 26px;
+  padding-bottom: 85px;
+}
+
+.strategy .stratrgy-container .strategy-list {
+  padding-bottom: 30px;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--color-black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec5- Design Style Guide 디자인 스타일 가이드 */
+.styleguide {
+  background-color: #FAF7F6;
+  padding: 50px 50px;
+}
+
+.styleguide .styleguide-bg {
+  background-color: var(--color-white);
+  padding: 100px 100px;
+  border-radius: 20px;
+}
+
+.style-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.style-title::after {
+  content: "";
+  width: 470px;
+  height: 1.5px;
+  background-color: #000;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+
+
+/* 스타일 박스 그리드 영역 제어 */
+.styleguide .styleguide-bg .stlye-box-wrapper {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  padding: 0 70px;
+}
+
+.styleguide .styleguide-bg .stlye-box-wrapper .stylebox-color {
+  grid-column: 1 / 3;
+}
+
+
+
+
+
+/* 3-1. 스타일 키워드 영역 */
+.styleguide .stylebox-keyword .style-keyword-box-wrapper {
+  padding: 30px 0;
+  gap: 20px;
+}
+
+.styleguide .stylebox-keyword .style-keyword-box {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background-color: #5D5D5D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FDD93B;
+  font-weight: 500;
+}
+
+
+
+/* 3-2. 타이포그래피 영역 */
+.stlye-box-wrapper {
+  position: relative;
+}
+
+.stylebox-typo {
+  position: absolute;
+  right: 115px;
+}
+
+.stylebox-typo .typo-box-wrapper {
+  width: 350px;
+  height: 150px;
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+.stylebox-typo .typo-box-wrapper .typo-box {
+  justify-content: space-between;
+
+}
+
+.stylebox-typo .typo-box-wrapper .typo-box p:first-child {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.stylebox-typo .typo-box-wrapper .typo-box p:first-child span {
+  font-weight: 300;
+}
+
+
+/* 3-3. 컬러 영역 */
+.stylebox-color {
+  margin-top: 100px;
+}
+
+.stylebox-color .color-wrapper {
+  justify-content: space-between;
+}
+
+.stylebox-color .color-sub-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stylebox-color .color-wrapper .color-txt {
+  height: 40px;
+}
+
+.stylebox-color .color-wrapper .color-chip-box {
+  width: 85px;
+  height: 120px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.colorbox.box1 .color-chip-box {
+  width: 150px;
+}
+
+.color-chip-box-wrapper {
+  gap: 10px;
+}
+
+.stylebox-color .color-wrapper .color-chip-box p {
+  background-color: var(--color-white);
+  font-size: 12px;
+  font-weight: 500;
+  color: #888;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 3px 10px;
+  border-radius: 0 0 8px 8px;
+}
+
+.color-wrapper .colorbox .color-txt p:last-child {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+/* 공통 컬러 chip 스타일 */
+.color-chip {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* 각 컬러 chip에 배경색 적용 */
+.colorbox.box1 .color-chip-box .color-chip {
+  background-color: #599CE0;
+}
+
+.colorbox.box2 .color-chip-box:nth-child(1) .color-chip {
+  background-color: #06AC63;
+}
+
+.colorbox.box2 .color-chip-box:nth-child(2) .color-chip {
+  background-color: #E62D2A;
+}
+
+.colorbox.box2 .color-chip-box:nth-child(3) .color-chip {
+  background-color: #3D94FF;
+}
+
+.colorbox.box2 .color-chip-box:nth-child(4) .color-chip {
+  background-color: #CEC4FD;
+}
+
+.colorbox.box2 .color-chip-box:nth-child(5) .color-chip {
+  background-color: #E4DCD4;
+}
+
+.colorbox.box3 .color-chip-box:nth-child(1) .color-chip {
+  background-color: #FDD93B;
+}
+
+.colorbox.box3 .color-chip-box:nth-child(2) .color-chip {
+  background-color: #F37046;
+}
+
+.colorbox.box3 .color-chip-box:nth-child(3) .color-chip {
+  background-color: #FFFFFF;
+}
+
+.colorbox.box3 .color-chip-box:nth-child(4) .color-chip {
+  background-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec4- Publishing - 퍼블리싱 */
+.publishing {
+  padding: 200px 150px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.publishing .sub-title {
+  align-items: start;
+}
+
+.publishing .publishing-list {
+  list-style: disc;
+  font-size: 18px;
+  padding-right: 140px;
+}
+
+.publishing .publishing-list li {
+  padding: 10px 0;
+}
+
+.publishing .publishing-list li strong {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec5- review - 리뷰 */
+.review {
+  padding: 150px 150px 200px;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.review::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  height: 1.5px;
+  background-color: #777;
+}
+
+.review .review-txt-wrapper {
+  padding: 0 160px;
+}
+
+.review p {
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 30px;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+
+.review p strong {
+  font-size: 19px;
+}

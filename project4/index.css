@@ -1,0 +1,592 @@
+@charset "utf-8";
+
+/***** fonts *****/
+/* font-family: "Quantico"; */
+@import url(../assets/styles/Quantico_font.css);
+
+/* font-family: 'Pretendard Variable'; */
+@import url(../assets/styles/pretendardvariable.css);
+
+/* font-family: 'Instrument Serif'; */
+@import url(../assets/styles/InstrumentSerif_font.css);
+
+/* font-family: 'Italiana'; */
+@import url(../assets/styles/Italiana_font.css);
+
+
+
+/* main-side-bar 고정바 영역 */
+.main-side-bar {
+  width: 18%;
+  min-width: 344px;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  background-color: var(--bg-olivegreen);
+  padding: 0 40px;
+  box-sizing: border-box;
+  z-index: 999999;
+}
+
+/* main-contents 콘텐츠 영역 */
+.main-contents {
+  width: 82%;
+  min-width: 1300px;
+  margin-left: 18%;
+}
+
+
+
+
+
+/* main-side-bar 사이드 고정바 */
+.main-side-bar .side-bar-wrapper {
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.main-side-bar .pj-label {
+  font-family: 'IBM Plex Mono';
+  color: var(--color-white);
+  font-size: 16px;
+}
+
+.main-side-bar .txt-wrapper {
+  padding-top: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: var(--color-white);
+}
+
+.main-side-bar .txt-wrapper p:nth-child(1) {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+.main-side-bar p:nth-child(2) {
+  margin-top: 20px;
+}
+
+.main-side-bar .main-link-btn {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  background-color: var(--color-white);
+  color: var(--bg-olivegreen);
+  border: var(--color-white);
+  border-radius: .5rem;
+  padding: 20px 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.main-side-bar .main-link-btn:hover {
+  background-color: transparent;
+  border: var(--color-white) 1.5px solid;
+  color: var(--color-white);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* sec1 - intro 메인 인트로 */
+.main-contents .main-intro {
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  height: 100vh;
+  padding-top: 70px;
+}
+
+
+.main-intro-container .intro-box {
+  background-color: #333333;
+  height: calc(100vh - 70px);
+  margin-top: 70px;
+  width: 100%;
+  position: relative;
+}
+
+.main-intro-container .intro-box .intro-txt
+{
+  justify-content: space-between;
+  padding: 40px 50px 0;
+  color: var(--color-white);
+  font-family: Quantico;
+}
+.main-intro-container .intro-box .intro-txt p {
+  font-size: 16px;
+}
+
+
+/* 아이맥 목업 */
+.imac {
+  width: 700px;
+  margin: 130px 400px;
+}
+
+.iphone {
+  position: absolute;
+  bottom: 40px;
+  left: 300px;
+}
+
+/* 아이패드 목업 스타일 */
+.ipad-mockup {
+  position: absolute;
+  bottom: 60px;
+  right: 220px;
+  width: 341px;
+  height: 444px;
+
+  overflow: hidden;
+  background-image: url(./images/ipadMockup.png);
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+/* 아이패드 안의 화면 */
+.screen {
+  width: 309px;
+  height: 412px;
+  position: absolute;
+  top: 3.5%;
+  left: 4.6%;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: black;
+}
+
+/* 화면 안의 이미지 */
+.images {
+  position: absolute;
+  top: 0;
+  animation: slide 10s ease-in-out infinite alternate;
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+}
+
+/* translateY 애니메이션 */
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-77%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec2 - Overview 오버뷰 */
+.overview {
+  padding: 150px 150px 200px 150px;
+}
+
+.overview .overview-container {
+  flex-direction: column;
+}
+
+.overview .overview-txt-box p {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.overview .overview-txt-box p strong {
+  font-size: 18px;
+}
+
+.overview .overview-txt-box p:first-child {
+  padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec3 - Design Concept 디자인 컨셉 */
+.concept {
+  padding: 150px 150px 200px 150px;
+}
+
+.concept::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  height: 1.5px;
+  background-color: #777;
+}
+
+.concept .concept-container {
+  flex-direction: column;
+  color: var(--color-black);
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+
+.concept .concept-container .slogan {
+  font-size: 26px;
+  padding-bottom: 85px;
+  color: var(--bg-olivegreen);
+}
+.concept .concept-container .concept-txt {
+  padding-bottom: 20px;
+
+}
+.concept .concept-container .concept-txt p {
+  font-size: 17px;
+  line-height: 32px;
+}
+.concept .concept-container .concept-txt p strong {
+  font-size: 18px;
+}
+
+/* circle */
+.circle-wrapper {
+  margin: 100px auto 0;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  width: 70%;
+}
+
+.circle-wrapper .full-box {
+  gap: 50px;
+  justify-content: space-between;
+
+  
+}
+
+.circle-wrapper .circlebox {
+  background-color: var(--bg-olivegreen);
+  color: var(--color-white);
+  height: 230px;
+  width: 230px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+.circle-wrapper .circlebox p {
+  font-size: 16.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec4- Design Style Guide 디자인 스타일 가이드 */
+.styleguide {
+  background-color: #FAF7F6;
+  padding: 50px 50px;
+}
+
+.styleguide .styleguide-bg {
+  background-color: var(--color-white);
+  padding: 100px 100px;
+  border-radius: 20px;
+}
+
+.style-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.style-title::after {
+  content: "";
+  width: 470px;
+  height: 1.5px;
+  background-color: #000;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+
+
+/* 스타일 박스 그리드 영역 제어 */
+.styleguide .styleguide-bg .stlye-box-wrapper {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  padding: 0 70px;
+}
+
+.styleguide .styleguide-bg .stlye-box-wrapper .stylebox-color {
+  grid-column: 1 / 3;
+}
+
+
+
+
+
+/* 4-1. 스타일 키워드 영역 */
+.styleguide .stylebox-keyword .style-keyword-box-wrapper {
+  padding: 30px 0;
+  gap: 20px;
+}
+
+.styleguide .stylebox-keyword .style-keyword-box {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background-color: #525252;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+
+
+/* 4-2. 타이포그래피 영역 */
+.stlye-box-wrapper {
+  position: relative;
+}
+
+.stylebox-typo {
+  position: absolute;
+  right: 115px;
+}
+
+.stylebox-typo .typo-box-wrapper {
+  width: 350px;
+  height: 200px;
+  padding-top: 40px;
+  font-weight: bold;
+}
+
+.stylebox-typo .typo-box-wrapper .typo-box {
+  justify-content: space-between;
+}
+
+.stylebox-typo .typo-box-wrapper .typo-box p:first-child {
+  font-size: 33px;
+}
+
+.stylebox-typo .typo-box-wrapper .typo-box:nth-child(1) {
+  font-family: 'Instrument Serif';
+  padding-bottom: 25px;
+}
+.stylebox-typo .typo-box-wrapper .typo-box:nth-child(2) {
+  font-family: 'Italiana';
+  padding-bottom: 25px;
+}
+.stylebox-typo .typo-box-wrapper .typo-box:nth-child(3) {
+  padding-bottom: 25px;
+}
+
+
+
+
+/* 4-3. 컬러 영역 */
+.stylebox-color {
+  margin-top: 100px;
+}
+
+.stylebox-color .color-sub-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stylebox-color .color-desc {
+  margin: 20px 0 20px;
+}
+.stylebox-color .color-wrapper .color-box p {
+  font-size: 15px;
+}
+.stylebox-color .color-wrapper .color-box:nth-child(1) {
+  width: 170px;
+  height: 65px;
+  background-color: #57725F;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: var(--color-white);
+  text-align: center;
+  padding-top: 19px;
+}
+
+.stylebox-color .color-wrapper .color-box:nth-child(2) {
+  width: 115px;
+  height: 65px;
+  background-color: #DFDAD5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: var(--color-black);
+  text-align: center;
+  padding-top: 19px;
+}
+
+.stylebox-color .color-wrapper .color-box:nth-child(3) {
+  width: 115px;
+  height: 65px;
+  background-color: #525252;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: var(--color-white);
+  text-align: center;
+  padding-top: 19px;
+}
+
+.stylebox-color .color-wrapper .color-box:nth-child(4) {
+  width: 115px;
+  height: 65px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: var(--color-black);
+  text-align: center;
+  padding-top: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec4- Publishing - 퍼블리싱 */
+.publishing {
+  padding: 200px 150px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.publishing .sub-title {
+  align-items: start;
+}
+
+.publishing .publishing-list {
+  list-style: disc;
+  font-size: 18px;
+  padding-right: 140px;
+}
+
+.publishing .publishing-list li {
+  padding: 10px 0;
+}
+
+.publishing .publishing-list li strong {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec5- review - 리뷰 */
+.review {
+  padding: 150px 150px 200px;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.review::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  height: 1.5px;
+  background-color: #777;
+}
+
+.review .review-txt-wrapper {
+  padding: 0 160px;
+}
+
+.review p {
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 30px;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+
+.review p strong {
+  font-size: 19px;
+}

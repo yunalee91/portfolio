@@ -1,0 +1,904 @@
+@charset "utf-8";
+
+/* 마우스 커서 */
+body,
+a {
+    cursor: none !important;
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--bg-yellow);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: background-color 0.1s ease;
+}
+
+.black-cursor {
+    background-color: var(--bg-black) !important;
+}
+
+
+
+
+/* sec1. intro */
+.intro {
+    background-color: var(--bg-inblue);
+    height: 100vh;
+    color: var(--color-white);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.intro .intro-txt-wrapper {
+    width: 50%;
+    padding: 150px 0 0 200px;
+}
+
+
+.intro .intro-txt-wrapper h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.intro .intro-txt-wrapper p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+
+.intro .shape-bottom img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 580px;
+
+}
+
+.intro .shape-wrapper .back {
+    width: 920px;
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    z-index: 9;
+}
+
+.intro .shape-wrapper .front {
+    width: 700px;
+    position: absolute;
+    top: 120px;
+    right: 150px;
+    z-index: 9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec2. about */
+.about-wrapper {
+    background-color: var(--bg-yellow);
+    height: 55vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-wrapper .logo {
+    margin-bottom: 80px;
+}
+
+
+.about-wrapper p {
+    font-size: 19px;
+    line-height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec3. SPECIAL EDITORIAL 01 */
+.editorial-one,
+.editorial-two {
+    background-color: #FAFAFA;
+    height: 58vh;
+    text-align: center;
+    color: #808080;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adi-subtitle {
+    font-size: 21px;
+    margin-bottom: 40px;
+}
+
+.adi-title {
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.adi-desc {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.editorial-one .adi-title {
+    color: var(--bg-green);
+}
+
+.editorial-two .adi-title {
+    color: var(--bg-lblue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec4. product 01 (LUCKY HEARTY) */
+.products-one {
+    background-color: var(--bg-green);
+    font-weight: 600;
+    position: relative;
+}
+
+.products-one .products-wrapper .products-txt-wrapper {
+    padding-left: 180px;
+}
+
+.products-one .products-wrapper .products-txt-wrapper .pj-label {
+    color: var(--color-white);
+    margin-bottom: 40px;
+    font-size: 25px;
+    position: relative;
+}
+
+.products-one .products-wrapper .products-txt-wrapper .pj-label::after {
+    content: "";
+    background-color: var(--color-white);
+    width: 130px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+}
+
+.products-wrapper .products-txt-wrapper .pj-title {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.products-wrapper .products-txt-wrapper .pj-sub-title {
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 80px;
+    font-weight: 500;
+}
+
+.products-wrapper .products-txt-wrapper .price-box .price-circle {
+    width: 45px;
+    height: 45px;
+    background-color: var(--bg-black);
+    border-radius: 50%;
+    color: var(--color-white);
+    text-align: center;
+    line-height: 45px;
+}
+
+.products-wrapper .products-txt-wrapper .price-box {
+    justify-content: space-between;
+}
+
+.products-wrapper .products-txt-wrapper .price-box .price span {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.products-one .products-wrapper {
+    width: 80%;
+    padding: 150px 0 100px 220px;
+    position: relative;
+}
+
+/* 아래 영역 - Check Point */
+.products-one .products-wrapper-bottom {
+    width: 54%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 30px 0 150px 0;
+}
+
+.products-one .products-wrapper-bottom .products-img-circle {
+    width: 330px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 50%
+}
+
+.products-one .products-wrapper-bottom .products-check-point p {
+    color: var(--color-white);
+    margin-bottom: 10px;
+    font-size: 35px;
+    text-indent: -20px;
+}
+
+.products-one .products-wrapper-bottom .products-check-point ul li {
+    list-style: disc;
+    padding: 15px 0;
+    font-size: 20px;
+    position: relative;
+}
+
+.products-one .products-wrapper-bottom .products-check-point ul li::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 75%;
+    transform: translateY(-50%);
+    width: 440px;
+    height: 20px;
+    border-bottom: 2px dashed var(--bg-black);
+}
+
+
+/* 클로버 회전 */
+.clover-container {
+    position: absolute;
+    right: 120px;
+    top: -95px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: center;
+}
+
+.clover {
+    animation: rotate-infinite 3s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate-infinite {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec5. contents 01 (WONDERLAND) */
+/* 흐르는 텍스트 */
+.container {
+    overflow: hidden;
+}
+
+.line-wrapper {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+}
+
+.line-wrapper .text {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    color: var(--bg-red);
+    padding-top: 20px;
+}
+
+.line-wrapper .text span {
+    margin-right: 30px;
+}
+
+
+
+
+/* 첫번째 컨테이너 */
+.contents-wonderland .first-container {
+    grid-template-columns: 30% 40% 30%;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.contents-wonderland .first-container .redlove-box,
+.contents-wonderland .first-container .bklove-box {
+    flex-direction: column;
+    gap: 70px;
+}
+
+
+.contents-wonderland .contents-first-box img {
+    border: var(--bg-red) 20px solid;
+
+}
+
+.contents-wonderland .first-container svg {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 텍스트 */
+.contents-wonderland .contents-first-box {
+    color: var(--bg-red);
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents-wonderland .contents-first-box .contents-title {
+    font-size: 58px;
+    padding: 40px 0;
+}
+
+.contents-wonderland .contents-first-box .contents-desc {
+    font-size: 19px;
+    line-height: 25PX;
+}
+
+/* 클로버 회전 */
+.bigclover {
+    animation: rotate-infinite 3s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate-infinite {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+/* 두번째 컨테이너 */
+.contents-wonderland .second-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.contents-wonderland .second-container svg {
+    width: 100%;
+}
+
+.contents-wonderland .second-container .second-img-wrapper {
+    width: 100%;
+    padding: 0 200px;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.contents-wonderland .second-container .second-img-wrapper .second-img-box {
+    width: 700px;
+    height: 550px;
+    background: url(./images/sec5_red/sec502.jpg) center 95% / cover no-repeat;
+}
+
+
+
+
+
+
+/* 세번째 컨테이너 */
+.contents-wonderland .third-container {
+    margin-top: -100px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.contents-wonderland .third-container svg {
+    width: 100%;
+}
+
+/* Swiper 컨테이너 */
+.contents-wonderland .third-container .swiper-container {
+    position: absolute;
+    bottom: 20%;
+
+    width: 100%;
+    height: auto;
+}
+
+.contents-wonderland .swiper-wrapper {
+    display: flex;
+}
+
+/* 각 슬라이드 이미지 설정 */
+.contents-wonderland .swiper-slide {
+    width: 400px;
+    height: auto;
+}
+
+.contents-wonderland .swiper-slide img {
+    width: 400px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec7. product 02 (PLAYFUL MUSE) */
+.products-two {
+    background-color: var(--bg-lblue);
+}
+
+.products-two .products-wrapper {
+    width: 80%;
+    padding: 180px 0 0 100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-two .products-wrapper .products-txt-wrapper .pj-label {
+    color: var(--bg-yellow);
+    margin-bottom: 40px;
+    font-size: 25px;
+    position: relative;
+}
+
+.products-two .products-wrapper .products-txt-wrapper .pj-label::before {
+    content: "";
+    background-color: var(--bg-yellow);
+    width: 130px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.products-two .products-wrapper .products-image img {
+    width: 700px;
+}
+
+
+/* 아래 영역 */
+.products-two .products-wrapper-bottom {
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 100px 0 200px 0;
+
+    position: relative;
+}
+
+.products-two .products-wrapper-bottom .products-img-circle {
+    width: 330px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 50%
+}
+
+.products-two .products-wrapper-bottom .products-check-point {
+    padding-right: 100px;
+}
+
+.products-two .products-wrapper-bottom .products-check-point p {
+    color: var(--bg-yellow);
+    margin-bottom: 10px;
+    font-size: 35px;
+    text-indent: -20px;
+}
+
+.products-two .products-wrapper-bottom .products-check-point ul li {
+    color: var(--color-white);
+    list-style: disc;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.products-two .products-wrapper-bottom .products-check-point ul li::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 75%;
+    transform: translateY(-50%);
+    width: 410px;
+    height: 20px;
+    border-bottom: 2px dashed var(--bg-yellow);
+}
+
+/* 튤립 */
+#tulip {
+    animation: swing 2s ease-in-out infinite;
+    transform-origin: center center;
+    position: absolute;
+    bottom: 190px;
+    left: -80px;
+}
+
+#tulipmd {
+    animation: swing 2s ease-in-out infinite;
+    transform-origin: center center;
+    position: absolute;
+    bottom: 190px;
+    left: 60px;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(-8deg);
+        /* 왼쪽 지평선 아래 -30도 */
+    }
+
+    50% {
+        transform: rotate(8deg);
+        /* 오른쪽 지평선 아래 30도 */
+    }
+
+    100% {
+        transform: rotate(-8deg);
+        /* 다시 왼쪽 지평선 아래 -30도로 돌아옴 */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec8. contents 02 (HIDDEN LUCKY) */
+.contents-hiddenlucky {
+    background-color: var(--bg-lavender);
+    overflow: hidden;
+}
+
+
+/* 첫번째 컨테이너 */
+.contents-hiddenlucky .contents-first-box {
+    position: relative;
+
+}
+
+.contents-hiddenlucky .contents-first-box .style2 .lottie-wrapper {
+    padding: 150px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.contents-hiddenlucky .contents-first-box img {
+    border: var(--bg-blue) 20px solid;
+}
+
+/* 텍스트 */
+.contents-hiddenlucky .contents-first-box {
+    color: var(--bg-blue);
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents-hiddenlucky .contents-first-box .contents-title {
+    font-size: 58px;
+    padding: 40px 0;
+}
+
+.contents-hiddenlucky .contents-first-box .contents-desc {
+    font-size: 19px;
+    line-height: 30px;
+}
+
+
+/* 두번째 컨테이너 */
+.contents-hiddenlucky .second-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: -300px;
+}
+.contents-hiddenlucky .second-container svg {
+    width: 100%;
+}
+
+.contents-hiddenlucky .second-container .second-img-wrapper {
+    width: 100%;
+    padding: 0 210px;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.contents-hiddenlucky .second-container .second-img-wrapper .second-img-box {
+    width: 700px;
+    height: 550px;
+    background: url(./images/sec8_lavender/sec802.jpg) center 50% / cover no-repeat;
+}
+
+
+/* 세번째 컨테이너 */
+.contents-hiddenlucky .lavender-container {
+    margin-top: -100px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.contents-hiddenlucky .lavender-container svg {
+    width: 100%;
+}
+
+/* Swiper 컨테이너 */
+.contents-hiddenlucky .lavender-container .swiper-container {
+    position: absolute;
+    bottom: 20%;
+
+    width: 100%;
+    height: auto;
+}
+
+.contents-hiddenlucky .lavender-container .swiper-wrapper {
+    display: flex;
+}
+
+/* 각 슬라이드 이미지 설정 */
+.contents-hiddenlucky .lavender-container .swiper-slide {
+    width: 400px;
+    /* 이미지 가로 사이즈 400px */
+    height: auto;
+    /* 비율을 유지하면서 자동으로 높이 조정 */
+}
+
+.contents-hiddenlucky .lavender-container .swiper-slide img {
+    width: 400px;
+    height: auto;
+}
+
+
+
+/* lottie 컨테이너 */
+#ex2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.style2 .lottie-wrapper {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sec9. event (BENEFIT) */
+.event {
+    background-color: var(--bg-lblue);
+    padding: 120px 0;
+}
+
+.event .title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.event .event-list li {
+    font-size: 23px;
+    padding: 23px;
+}
+
+.event .event-list li:nth-of-type(1) {
+    border-bottom: rgba(0, 0, 0, 0.5) 2px solid;
+    border-top: var(--bg-black) 3px solid;
+}
+
+.event .event-list li:nth-of-type(2) {
+    border-bottom: rgba(0, 0, 0, 0.5) 2px solid;
+}
+
+.event .event-list span {
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 50px;
+}
+
+.event .list-img .event-txt p:first-of-type {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.event .list-img .event-txt p:last-of-type {
+    font-size: 18px;
+    color: var(--bg-yellow);
+    margin-top: 100px;
+    font-weight: 500;
+}
+
+
+.event .event-list {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.event .list-img {
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: var(--bg-black) 2px solid;
+    padding-bottom: 20px;
+}
+
+.event .list-img .event-txt {
+    margin-left: 160px;
+}
+
+.event .list-img img {
+    margin-left: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    background-color: var(--bg-black);
+    color: var(--color-white);
+    height: 20vh;
+    position: relative;
+}
+
+
+footer a {
+    font-size: 18px;
+    background-color: var(--bg-yellow);
+    color: var(--color-black);
+    padding: 15px 35px;
+    border-radius: 30px;
+
+    position: absolute;
+    right: 90px;
+    top: 60px;
+}
+
+footer a:hover {
+    background-color: transparent;
+    border: var(--bg-yellow) 2px solid;
+    color: var(--bg-yellow);
+}
+
+footer p {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}

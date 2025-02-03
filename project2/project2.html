@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title>CAYL</title>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="./images/favicon/site.webmanifest" />
+
+  <!-- open graph -->
+  <meta property="og:url" content="https://yunalee91.github.io/portfolio/project2/project2.html" />
+  <meta property="og:title" content="CAYL" />
+  <meta property="og:description" content="CAYL : Climb As You Love" />
+  <meta property="og:site_name" content="CAYL" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://yunalee91.github.io/portfolio/images/mainLogo.svg" />
+
+  <!-- style -->
+  <!-- reset -->
+  <link rel="stylesheet" href="../assets/styles/reset.css">
+  <!-- 공통 global style -->
+  <link rel="stylesheet" href="./assets/styles/common.css">
+  <!-- layout : 현재페이지(index.html) style -->
+  <link rel="stylesheet" href="./project2.css">
+  <link rel="stylesheet" href="../assets/styles/aos.css">
+
+  <!-- script -->
+  <!-- swiper style -->
+  <link rel="stylesheet" href="./assets/scripts/swiper-bundle.min.css">
+  <script src="../assets/scripts/lottie.min.js"></script>
+  <script src="../assets/scripts/jquery-3.7.1.min.js"></script>
+  <script src="../assets/scripts/jquery-ui.min.js"></script>
+  <script src="../assets/scripts/aos.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <h1 class="main_logo">
+      <a href="#">메인로고</a>
+    </h1>
+    <div class="main_txt">
+      <p class="intro_title_sm">The gift edit</p>
+      <h3>Give the gift of movement</h3>
+      <p>Cayl provides high-performance gear for<br>climbers, boulderers, hikers, and city explorers, based in Seoul.
+      </p>
+    </div>
+    <div class="main_btn">
+      <a href="#" class="btn">Shop now</a>
+      <a href="#" class="btn">Explore the collection</a>
+    </div>
+
+    <nav class="header-nav">
+      <!-- mobile menu -->
+      <ul class="mobile-menu">
+        <li><a href="#"><img src="./images/icon/search_ffff.svg" alt="serch 검색 아이콘"></a></li>
+        <li><a href="#"><img src="./images/icon/shopping_bag_ffff.svg" alt="cart 장바구니 아이콘"></a></li>
+        <li><a href="#"><img src="./images/icon/person_ffff.svg" alt="user 유저 아이콘"></a></li>
+        <li><a href="#" id="hamburger-menu"><img src="./images/icon/menu_ffff.svg" alt="menu 햄버거메뉴 아이콘"></a></li>
+      </ul>
+
+      <!-- mobile-menu-category -->
+      <div class="mobile-menu-category">
+        <h3 class="main_logo">
+          <a href="#">메인로고</a>
+        </h3>
+        <ul class="mobile-menu-catlist">
+          <li><a href="#">Shop</a>
+            <a href="#" class="plus-btn">+</a>
+          </li>
+          <li><a href="#">Activities</a>
+            <a href="#" class="plus-btn">+</a>
+          </li>
+          <li><a href="#">Collection</a>
+            <a href="#" class="plus-btn">+</a>
+          </li>
+          <li><a href="#">For Cayl</a>
+            <a href="#" class="plus-btn">+</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- pc menu -->
+      <div class="pc-menu-wrapper">
+        <div class="pc-menu" id="navbar">
+          <ul class="global-menu flex-container">
+            <li><a href="#" id="shop-menu">Shop</a></li>
+            <li><a href="#" id="activity-menu">Activities</a></li>
+            <li><a href="#" id="collection-menu">Collection</a></li>
+            <li><a href="#">For Cayl</a></li>
+          </ul>
+          <ul class="global-menu-icon">
+            <li><a href="#"><img src="./images/icon/search_ffff.svg" alt="serch 검색 아이콘"></a></li>
+            <li><a href="#"><img src="./images/icon/shopping_bag_ffff.svg" alt="cart 장바구니 아이콘"></a></li>
+            <li><a href="#"><img src="./images/icon/person_ffff.svg" alt="user 유저 아이콘"></a></li>
+          </ul>
+        </div>
+
+        <!-- pc menu - submenu -->
+        <div class="submenu-container" id="submenu">
+          <ul>
+            <li><a href="#">ALL</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Jacket</a></li>
+            <li><a href="#">Top</a></li>
+            <li><a href="#">Bottom</a></li>
+            <li><a href="#">Bag</a></li>
+            <li><a href="#">Acc</a></li>
+            <li><a href="#">Select : The Lowest Mountain</a></li>
+          </ul>
+        </div>
+        <div class="submenu-container" id="submenuActivities">
+          <ul>
+            <li><a href="#">Climbing</a></li>
+            <li><a href="#">Bouldering</a></li>
+            <li><a href="#">Hiking</a></li>
+            <li><a href="#">Trail running</a></li>
+            <li><a href="#">Camping</a></li>
+            <li><a href="#">Travel</a></li>
+          </ul>
+        </div>
+        <div class="submenu-container" id="submenuCollection">
+          <ul>
+            <li><a href="#">2024 FW</a></li>
+            <li><a href="#">2024 SS</a></li>
+            <li><a href="#">2023 FW</a></li>
+            <li><a href="#">2023 SS</a></li>
+            <li><a href="#">2022 FW</a></li>
+            <li><a href="#">2022 SS</a></li>
+            <li><a href="#">2021 FW</a></li>
+            <li><a href="#">2021 SS</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+
+
+
+  <!-- sec2_Shop by category -->
+  <section class="category padding-sm" data-aos="fade-up">
+    <h2 class="title">Shop by category</h2>
+
+    <!-- category-Swiper -->
+    <div class="category-swiper swiper">
+      <ul class="category-wrapper swiper-wrapper">
+        <li class="category-list swiper-slide transit">
+          <div class="category-bg"></div>
+          <p>Apparel</p><a href="#" class="circle-button"></a>
+        </li>
+        <li class="category-list swiper-slide transit">
+          <div class="category-bg"></div>
+          <p>Shoes</p>
+          <a href="#" class="circle-button"></a>
+        </li>
+        <li class="category-list swiper-slide transit">
+          <div class="category-bg"></div>
+          <p>Accessories</p><a href="#" class="circle-button"></a>
+        </li>
+      </ul>
+      <!-- Swiper Pagination -->
+      <div class="category-pagination"></div>
+    </div>
+
+    <!-- Lookbook Swiper -->
+    <div class="lookbook-swiper swiper" data-aos="fade-left">
+      <ul class="lookbook-list swiper-wrapper">
+        <li class="swiper-slide transit">
+          <div class="lookbook-bg"></div>
+          <p>Lookbook 01</p><a href="#" class="circle-button"></a>
+        </li>
+        <li class="swiper-slide transit">
+          <div class="lookbook-bg"></div>
+          <p>Lookbook 02</p><a href="#" class="circle-button"></a>
+        </li>
+        <li class="swiper-slide transit">
+          <div class="lookbook-bg"></div>
+          <p>Lookbook 03</p><a href="#" class="circle-button"></a>
+        </li>
+        <li class="swiper-slide transit">
+          <div class="lookbook-bg"></div>
+          <p>Lookbook 04</p><a href="#" class="circle-button"></a>
+        </li>
+        <li class="swiper-slide transit">
+          <div class="lookbook-bg"></div>
+          <p>Lookbook 05</p><a href="#" class="circle-button"></a>
+        </li>
+        <li class="swiper-slide transit">
+          <div class="lookbook-bg"></div>
+          <p>Lookbook 06</p><a href="#" class="circle-button"></a>
+        </li>
+        <li class="swiper-slide transit">
+          <div class="lookbook-bg"></div>
+          <p>Lookbook 07</p><a href="#" class="circle-button"></a>
+        </li>
+      </ul>
+      <!-- Swiper Pagination -->
+      <div class="lookbook-pagination"></div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- sec3_New Arrival -->
+  <section class="products padding-sm" data-aos="fade-up">
+    <h2 class="title">New Arrival</h2>
+
+    <!-- products-Swiper -->
+    <div class="products-swiper swiper">
+      <ul class="products-list swiper-wrapper">
+        <li class="products-box swiper-slide transit"><a href="#">
+            <img src="./images/sec3/sec301.png" alt="프리마로프트 아노락 후디 자켓">
+            <div class="products-txt">
+              <p class="label">NEW</p>
+              <p>Primaloft Anorak Hoody Jacket</p>
+              <p class="price">₩329,000</p>
+              <ul class="color-box">
+                <li>col1</li>
+                <li>col2</li>
+              </ul>
+            </div>
+          </a></li>
+        <li class="products-box swiper-slide transit"><a href="#">
+            <img src="./images/sec3/sec302.png" alt="운문 45L 배낭">
+            <div class="products-txt">
+              <p class="label">NEW</p>
+              <p>UNMUN _운문<br>(Cayl Grid) 45L</p>
+              <p class="price">₩298,000</p>
+              <ul class="color-box">
+                <li>col1</li>
+                <li>col2</li>
+              </ul>
+            </div>
+          </a></li>
+        <li class="products-box swiper-slide transit"><a href="#">
+            <img src="./images/sec3/sec303.png" alt="상품이미지3_Double Layer Glove 장갑">
+            <div class="products-txt">
+              <p class="label">NEW</p>
+              <p>Limber Stretch Shirts</p>
+              <p class="price">₩148,000</p>
+              <ul class="color-box">
+                <li>col1</li>
+                <li>col2</li>
+              </ul>
+            </div>
+          </a></li>
+        <li class="products-box swiper-slide transit"><a href="#">
+            <img src="./images/sec3/sec304.png" alt="더블레이어 플리스 글로브">
+            <div class="products-txt">
+              <p class="label">NEW</p>
+              <p>Double Layer Glove</p>
+              <p class="price">₩75,000</p>
+              <ul class="color-box">
+                <li>col1</li>
+                <li>col2</li>
+              </ul>
+            </div>
+          </a></li>
+      </ul>
+      <!-- Swiper Pagination -->
+      <div class="products-pagination"></div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- sec4_Launch Calendar -->
+  <section class="launch padding-sm" data-aos="fade-up">
+    <h2 class="title">Launch Calendar</h2>
+    <div class="launch-wrapper">
+      <ul class="launch-categories flex-container">
+        <li><a href="#">History</a>
+        <li><a href="#">In Stock</a></li>
+        <li><a href="#">Coming</a></li>
+      </ul>
+
+      <div class="launch-swiper swiper">
+        <ul class="launch-list swiper-wrapper">
+          <li class="launch-box swiper-slide"><a href="#">
+              <img src="./images/sec4/sec401.png" alt="뉴발란스 콜라보 1906R 슈즈">
+              <div class="launch-txt-box">
+                <p>11/30 오전 10:00 출시 예정</p>
+                <p>CAYL & New balance<br>Collaboration 1906R</p>
+              </div>
+            </a></li>
+          <li class="launch-box swiper-slide"><a href="#">
+              <img src="./images/sec4/sec402.png" alt="설악 7 울트라 사코슈백">
+              <div class="launch-txt-box">
+                <p>12/10 오전 10:00 출시 예정</p>
+                <p>CAYL Seorak 7 Ultra Sacoshe<br>설악 7 울트라 사코슈백</p>
+              </div>
+            </a></li>
+          <li class="launch-box swiper-slide"><a href="#">
+              <img src="./images/sec4/sec403.png" alt="EQ 하이커캡">
+              <div class="launch-txt-box">
+                <p>12/26 오전 18:00 재입고 예정</p>
+                <p>CAYL EQ Hiker Cap<br>Pertex Equilibrium</p>
+              </div>
+            </a></li>
+          <li class="launch-box swiper-slide"><a href="#">
+              <img src="./images/sec4/sec404.png" alt="다운자켓">
+              <div class="launch-txt-box">
+                <p>12/30 오전 10:00 출시 예정</p>
+                <p>CAYL Heavy Down<br>Goose Down 95:5 900+FP</p>
+              </div>
+            </a></li>
+        </ul>
+        <!-- Swiper Pagination -->
+        <div class="launch-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- sec5_Recommendation -->
+  <section class="recommend padding-sm" data-aos="fade-up">
+    <h2 class="title">Recommendation</h2>
+    <!-- recommend-Swiper -->
+    <div class="recommend-swiper swiper">
+      <ul class="recommend-list swiper-wrapper">
+        <li class="swiper-slide transit">
+          <p>A beginner’s guide<br>to trail running</p>
+          <a href="#" class="circle-button"></a>
+        </li>
+        <li class="swiper-slide transit">
+          <p>Cayl 2024 AW Collection:<br>Our Comfortable Mountain</p>
+          <a href="#" class="circle-button"></a>
+        </li>
+        <li class="swiper-slide transit">
+          <p>Your first backpacking:<br>What to expect</p>
+          <a href="#" class="circle-button"></a>
+        </li>
+        <li class="swiper-slide transit">
+          <p>Cayl Bags Collection:<br>Urban city life wear</p>
+          <a href="#" class="circle-button"></a>
+        </li>
+      </ul>
+
+      <!-- swiper-pagination -->
+      <div class="recommend-pagination"></div>
+    </div>
+  </section>
+
+
+  <!-- sec6_Brand story -->
+  <section class="brand_story">
+    <div class="brandstory-wrapper">
+      <div class="brandstory-wrapper-left">
+        <div class="brand_stoty_txt">
+          <h2>Climb As You Love</h2>
+          <p>CAYL is oriented towards climbing, trail running, hiking cultures. Ultimately, CAYL supports local outdoor
+            culture to be rising. It’s not only ‘climb the rocks’, but ‘climb our LIFE’.</p>
+          <a href="#" class="btn_two">Brand Story →</a>
+        </div>
+      </div>
+      <div class="brandstoty_right-bg"></div>
+    </div>
+
+
+    <!-- Brand story-Swiper -->
+    <div class="brandstory-swiper swiper" data-aos="fade-left">
+      <ul class="brandstory-center swiper-wrapper">
+        <li class="swiper-slide transit">
+          <a href="#">
+            <img src="./images/sec6/sec601.png" alt="브랜드 스토리 이미지1">
+            <p>POP-UP STORE<br>
+              at beauty&youth Marunouchi</p>
+          </a>
+        </li>
+
+        <li class="swiper-slide transit">
+          <a href="#">
+            <img src="./images/sec6/sec602.png" alt="브랜드 스토리 이미지2">
+            <p>1LDK POP-UP STORE<br>
+              Tokyo nakameguro</p>
+          </a>
+        </li>
+
+        <li class="swiper-slide transit">
+          <a href="#">
+            <img src="./images/sec6/sec603.png" alt="브랜드 스토리 이미지3">
+            <p>CAYL x USAGE</p>
+          </a>
+        </li>
+      </ul>
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-box" data-aos="fade-up">
+      <a href="#">
+        <h2>Sign up now</h2>
+      </a>
+      <p>Stay in the loop, with exclusive offers and product previews.</p>
+    </div>
+
+    <div class="footer-box" data-aos="fade-up">
+      <h3>About</h3>
+      <div class="footer-link-box flex-container">
+        <a href="#">Who We Are</a>
+        <a href="#">Notice</a>
+      </div>
+    </div>
+
+    <div class="footer-box" data-aos="fade-up">
+      <h3>Sevice</h3>
+      <div class="footer-link-box flex-container">
+        <a href="#">Customer Care</a>
+        <a href="#">FAQ</a>
+        <a href="#">Stockist</a>
+        <a href="#">Store Guide</a>
+      </div>
+    </div>
+
+    <div class="footer-box" data-aos="fade-up">
+      <h3>상호 : 케일</h3>
+      <p>대표자명 : 김현정</p>
+      <p>사업자등록번호 : 1171523630</p>
+      <p>주소 : 서울특별시 양천구 공항대로 594 5층</p>
+      <p>통신판매신고번호 : 제 2014-서울양천-0483호</p>
+      <p>전화번호 : 070-4187-0446</p>
+      <p>이메일 : cayl@cayl.co.kr</p>
+      <p>입금계좌 : 우리은행 / 김현정 / 1002-937-090964</p>
+    </div>
+
+    <div class="footer-box">
+      <div class="footer-link-box flex-container">
+        <a href="#">이용약관</a>
+        <a href="#">개인정보처리방침</a>
+        <div class="footer-icon-box">
+          <a href="#"><img src="./images/icon/Instagram-Logo_ffff.svg" alt="페이스북 아이콘"></a>
+          <a href="#"><img src="./images/icon/Facebook-f_Logo-ffff.svg" alt="인스타그램 아이콘"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_logo">
+      <a href="#">푸터로고</a>
+    </div>
+  </footer>
+
+
+
+  <!-- 스크립트 -->
+  <!-- Swiper JS -->
+  <script src="./assets/scripts/swiper-bundle.min.js"></script>
+
+  <!-- intro-nav-script -->
+  <script src="./assets/styles/intro_swiper.js"></script>
+  <!-- sec2-swiper-script -->
+  <script src="./assets/styles/sec2_swiper.js"></script>
+  <!-- sec3-swiper-script -->
+  <script src="./assets/styles/sec3_swiper.js"></script>
+  <!-- sec4-swiper-script -->
+  <script src="./assets/styles/sec4_swiper.js"></script>
+  <!-- sec5-swiper-script -->
+  <script src="./assets/styles/sec5_swiper.js"></script>
+  <!-- sec6-swiper-script -->
+  <script src="./assets/styles/sec6_swiper.js"></script>
+
+  <!-- AOS -->
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+/***** fonts *****/
+/* 
+@font-face {
+	font-family: 'IBM Plex Mono';
+	font-weight: 500;
+  font-style: normal;
+   */
+@import url(../../../assets/styles/IBMPlexMono_font.css);
+
+/*
+@font-face {   
+	font-family: 'Pretendard Variable'; 
+*/
+@import url(../../../assets/styles/pretendardvariable.css);
+@import url(../../../assets/styles/Quantico_font.css);
+
+
+
+/**** font-family-setting ****/
+html {
+  font-family: 'Pretendard Variable';
+  color: var(--color-black)
+}
+header {
+  font-family: 'IBM Plex Mono';
+}
+
+
+
+/**** css 변수 ****/
+:root {
+  --font-main-title-xxlg: 5rem;
+  /*80px*/
+  --font-main-title-xlg: 4.375rem;
+  /*70px*/
+  --font-list-title-lg: 3.75rem;
+  /*60px*/
+  --font-list-title-md: 2.5rem;
+  /*40px*/
+  --font-list-title-sm: 1.25rem;
+  /*20px*/
+  --font-basic: 1rem;
+  /*16px*/
+  --font-xs: 0.8125rem;
+  /*13px*/
+
+
+  --color-primary: #B1EA11;
+  --border-primary: 1px solid var(--color-primary);
+  --border-gray: 1px solid hsla(0, 0%, 100%, .15);
+
+  --bg-dgray: #262626;
+  --bg-black: #181818;
+  --bg-clear-black: rgba(77, 77, 77, .3);
+
+  --color-white: #fff;
+  --color-gray: #484848;
+  --color-black: #181818;
+
+  --spacing-3xlg: 6.25rem;
+  /* 100px */
+  --spacing-xlg: 2.5rem;
+  /* 40px */
+  --spacing-lg: 1.875rem;
+  /* 30px */
+  --spacing-md: 1.25rem;
+  /* 20px */
+  --spacing-sm: 1.125rem;
+  /* 18px */
+  --spacing-xsm: 0.625rem;
+  /* 10px */
+}
+
+
+
+
+
+/**** global style ****/
+/* 부드러운 스크롤 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 드래그 */
+html ::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* 스크롤바 */
+html ::-webkit-scrollbar {
+  width: 15px;
+}
+
+html ::-webkit-scrollbar-track {
+  background-color: var(--color-primary);
+}
+
+html ::-webkit-scrollbar-thumb {
+  background-color: var(--color-black);
+  border: var(--border-primary);
+  border-radius: 20px;
+}
+
+
+
+/**** font-size-setting ****/
+p {
+  font-size: var(--font-basic);
+  line-height: 25px;
+}
+
+h2 {
+  font-size: var(--font-main-title-xxlg);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--font-main-title-xlg);
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.list-title-lg {
+  font-size: var(--font-list-title-lg);
+  line-height: 60px;
+}
+
+.list-title-md {
+  font-size: var(--font-list-title-md);
+  line-height: 60px;
+}
+
+.list-title-sm {
+  font-size: var(--font-list-title-sm);
+  line-height: 60px;
+}
+
+.footer-title-wrapper h2:last-of-type {
+  font-size: 120px
+}
+
+header,
+.index,
+.btn {
+  font-size: var(--font-xs);
+}
+
+
+/* 레이아웃 */
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+}
+
+
+
+
+/**** header ****/
+/* 상단 고정 네비게이션바 영역 */
+#navbar {
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  background-color: var(--bg-dgray);
+  border-bottom: var(--border-primary);
+  color: var(--color-primary);
+}
+.header h1 {
+  line-height: 60px;
+}
+.header .main-nav {
+  justify-content: center;
+}
+.header .main-nav-box {
+  background-color: var(--bg-clear-black);
+  border: var(--border-gray);
+  border-radius: .5rem;
+  padding: 4px;
+}
+.header .main-nav li a {
+  display: block;
+  width: 110px;
+  text-align: center;
+  padding: 3px 0;
+  border-radius: .5rem;
+}
+.header .main-nav li:first-of-type a {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+}
+.header .side-nav a {
+  padding: 8px 20px;
+  border-radius: .5rem;
+}
+.side-nav {
+  justify-content: flex-end;
+  column-gap: 1rem;
+}
+.side-nav li:last-of-type a {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+}
+
+
+/* 공통 */
+.sub-title {
+  font-family: "Quantico";
+  font-size: 50px;
+  margin-bottom: 130px;
+}
+
